@@ -13,6 +13,8 @@ public:
 
 	Fraction Add(Fraction f1, Fraction f2);
 	Fraction Subtract(Fraction f1, Fraction f2);
+	Fraction Multiply(Fraction f1, Fraction f2);
+	Fraction Divide(Fraction f1, Fraction f2);
 };
 
 #endif

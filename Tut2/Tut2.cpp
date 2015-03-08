@@ -26,9 +26,13 @@ int main()
 
 	sum = temp.Add(frac1, frac2);
 	diff = temp.Subtract(frac1, frac2);
+	product = temp.Multiply(frac1, frac2);
+	quotient = temp.Divide(frac1, frac2);
 
 	cout << frac1.numerator << "/" << frac1.denominator << " + " << frac2.numerator << "/" << frac2.denominator << " = " << sum.numerator << "/" << sum.denominator << endl;
 	cout << frac1.numerator << "/" << frac1.denominator << " - " << frac2.numerator << "/" << frac2.denominator << " = " << diff.numerator << "/" << diff.denominator << endl;
+	cout << frac1.numerator << "/" << frac1.denominator << " * " << frac2.numerator << "/" << frac2.denominator << " = " << product.numerator << "/" << product.denominator << endl;
+	cout << frac1.numerator << "/" << frac1.denominator << " / " << frac2.numerator << "/" << frac2.denominator << " = " << quotient.numerator << "/" << quotient.denominator << endl;
 	system("pause");
 	return 0;
 }

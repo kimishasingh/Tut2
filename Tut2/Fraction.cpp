@@ -14,7 +14,7 @@ Fraction::~Fraction()
 Fraction Fraction::Add(Fraction f1, Fraction f2)
 {
 	Fraction answer;
-	answer.denominator = (f1.denominator * f2.denominator);
+	answer.denominator = f1.denominator * f2.denominator;
 	answer.numerator = (f1.numerator * f2.denominator) + (f2.numerator * f1.denominator);
 	return answer;
 }
@@ -22,7 +22,23 @@ Fraction Fraction::Add(Fraction f1, Fraction f2)
 Fraction Fraction::Subtract(Fraction f1, Fraction f2)
 {
 	Fraction answer;
-	answer.denominator = (f1.denominator * f2.denominator);
+	answer.denominator = f1.denominator * f2.denominator;
 	answer.numerator = (f1.numerator * f2.denominator) - (f2.numerator * f1.denominator);
+	return answer;
+}
+
+Fraction Fraction::Multiply(Fraction f1, Fraction f2)
+{
+	Fraction answer;
+	answer.denominator = f1.denominator * f2.denominator;
+	answer.numerator = f1.numerator * f2.numerator;
+	return answer;
+}
+
+Fraction Fraction::Divide(Fraction f1, Fraction f2)
+{
+	Fraction answer;
+	answer.denominator = f1.denominator * f2.numerator;
+	answer.numerator = f1.numerator * f2.denominator;
 	return answer;
 }
